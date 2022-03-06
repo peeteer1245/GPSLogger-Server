@@ -11,6 +11,6 @@ class GPSEntry extends Model
 
     public function user()
     {
-        $this->hasOne(User::class);
+        $this->hasOne(User::class, "id", "user");
     }
 }

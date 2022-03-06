@@ -44,6 +44,6 @@ class User extends Authenticatable
 
     public function gps_positions()
     {
-        return $this->hasMany(GPSEntry::class);
+        return $this->hasMany(GPSEntry::class, "user");
     }
 }
