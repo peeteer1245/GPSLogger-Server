@@ -94,7 +94,7 @@ class GPSEntryController extends Controller
                     break;
                 
                 case "ischarging":
-                    $gps_entry->is_charging = $value;
+                    $gps_entry->is_charging = strtolower($value) == 'true';
                     break;
                 
                 case "aid":
